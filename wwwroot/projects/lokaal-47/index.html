@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokaal 47 — Case Study</title>
+    <meta name="description" content="Explore how Yunona Korzh designed and developed a multilingual website with booking system for Lokaal 47, a collaborative space for teams. Learn about the UX/UI design process and technical implementation.">
+    <meta name="keywords" content="Lokaal 47, website design, web development, frontend, backend design case study, Yunona Korzh, booking system, multilingual website, Notion integration">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Lokaal 47 Website Design & Development Case Study | Yunona Korzh">
+    <meta property="og:description" content="Discover how Yunona Korzh created a comprehensive website solution for Lokaal 47, featuring multilingual support, booking system, and seamless content management.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://youknownow.nl/projects/lokaal-47/">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Lokaal 47 Website Design & Development: A Comprehensive Case Study",
+          "author": {
+            "@type": "Person",
+            "name": "Yunona Korzh"
+          },
+          "description": "A detailed case study on designing and developing a multilingual website with booking system for Lokaal 47, a collaborative space provider. Covers design process and technical implementation including Notion integration.",
+          "datePublished": "2023-07-28",
+          "publisher": {
+            "@type": "Organization",
+            "name": "You Know Now"
+          }
+        }
+    </script>
+</head>
+<body class="body--case-study">
+    <nav class="navigation" aria-label="Main Navigation">
+        <div class="logo__wrapper">
+            <a href="/" class="logo">You Know Now</a>
+        </div>
+        <div class="menu-icon">
+            <p>MENU</p>
+        </div>
+        <div class="menu" id="menu">
+            <ul class="menu__links">
+                <li class="menu__item"><a href="/work/" class="menu__link">Work</a></li>
+                <li class="menu__item"><a href="/about/" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="/Media/resume - Yunona Korzh.pdf" class="menu__link" target="_blank" rel="noopener" aria-label="Resume (opens in a new tab)">Resume</a></li>
+                <li class="menu__item"><a href="/testimonials/" class="menu__link">Testimonials</a></li>
+                <li class="menu__item"><a href="/contact/" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main--case-study lokaal-47__case-study">
+        <section class="case-study__header">
+            <div class="case-study__video">
+                <div class="macos-window">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <div class="window-button close"></div>
+                            <div class="window-button minimize"></div>
+                            <div class="window-button maximize"></div>
+                        </div>
+                    </div>
+                    <div class="video-container">
+                            <video autoplay loop muted playsinline class="header__video lokaal47Video" preload="auto" poster="" aria-label="Lokaal 47 Redesign Showcase Video">
+                                <source src="Media/lokaal47Video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                    </div>
+                </div>
+            </div>
+            <div class="case-study__header__text-content">
+               <hgroup class="case-study__heading-group">
+                    <h1 class="case-study__title">Lokaal 47</h1>
+                    <p class="case-study__intro">Designing and developing a website for a company offering rentable space for team collaboration and connection.</p>
+               </hgroup>
+               <nav class="case-study__nav" aria-label="Case Study Sections">
+                    <ul class="case-study__nav__links">
+                        <li class="case-study__nav__link"><a href="#overview" class="case-study__nav__link__anchor">Overview</a></li>
+                        <li class="case-study__nav__link"><a href="#research-and-planning" class="case-study__nav__link__anchor">Research and Planning</a></li>
+                        <li class="case-study__nav__link"><a href="#design" class="case-study__nav__link__anchor">Design</a></li>
+                        <li class="case-study__nav__link"><a href="#development" class="case-study__nav__link__anchor">Development</a></li>
+                        <li class="case-study__nav__link"><a href="#conclusion" class="case-study__nav__link__anchor">Conclusion</a></li>
+                    </ul>
+               </nav>
+            </div>
+        </section>
+        <section class="overview__section case-study__segment | main-grid__container" id="overview">
+            <h2 class="case-study__section__title">Overview</h2>
+            <div class="case-study__section__info">
+                <div class="overview__text">
+                    <p>I was tasked with creating a website from scratch for a new local company providing a collaborative space for teams. The project involved both design and development, including a booking system, event management, and multilingual support. The goal was to create a user-friendly website that effectively communicated the company's unique offerings and values while providing easy content management for the client.</p>
+                    <p><span class="overview__note | text--extra-bold">Note: </span>This case study describes an ongoing project. While the core functionality and design are complete, some content (some text and all of the images) are currently placeholders pending final materials from the client.</p>
+                </div>
+                <div class="overview-cards-grid-container">
+                    <div class="overview__card card--large">
+                        <img src="/Media/Icons/book.svg" class="overview__card__icon" alt="Research icon">
+                        <div class="overview__card__text">
+                            <p class="overview__card__label">Research</p>
+                            <p class="overview__card__description">Interviewed client to gather requirements, company details, and design preferences.</p>
+                        </div>
+                    </div>
+                    <div class="overview__card card--medium">
+                        <img src="/Media/Icons/page.svg" class="overview__card__icon" alt="Planning icon">
+                        <div class="overview__card__text">
+                            <p class="overview__card__label">Planning</p>
+                            <p class="overview__card__description">Collaborated with the client to plan and organize website content.</p>
+                        </div>
+                    </div>
+                    <div class="overview__card card--small card--small1">
+                        <img src="/Media/Icons/stars.svg" class="overview__card__icon" alt="Design icon">
+                        <div class="overview__card__text">
+                            <p class="overview__card__label">Design</p>
+                            <p class="overview__card__description">Created initial designs and refined them based on client feedback.</p>
+                        </div>
+                    </div>
+                    <div class="overview__card card--small card--small2">
+                        <img src="/Media/Icons/burst.svg" class="overview__card__icon" alt="Development icon">
+                        <div class="overview__card__text">
+                            <p class="overview__card__label">Development</p>
+                            <p class="overview__card__description">Developed frontend and backend, integrating databases.</p>
+                        </div>
+                    </div>
+                    <div class="overview__card card--small card--small3">
+                        <img src="/Media/Icons/megaphone.svg" class="overview__card__icon" alt="Delivery icon">
+                        <div class="overview__card__text">
+                            <p class="overview__card__label">Delivery</p>
+                            <p class="overview__card__description">Launched the website, ensuring efficient handover to the client.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="case-study__segment" id="research-and-planning">
+            <section class="considerations__section | main-grid__container">
+                <h2 class="case-study__section__title">Considerations</h2>
+                <div class="case-study__section__info">
+                    <p class="design-considerations__intro assessment-and-considerations__intro">Based on my analysis of the client requirements and the project goals, I identified several key areas to focus on:</p>
+                    <div class="design-consideration__items | grid-layout-two-columns">
+                        <div class="grid-layout-two-columns__item">
+                            <p class="consideration__number | text--extra-bold">01</p>
+                            <h3 class="consideration__title | text--extra-bold">User-friendly Interface</h3>
+                            <p class="consideration__text">Design intuitive interfaces for both end-users and the website owner, ensuring easy navigation and interaction with the site's features for all parties.</p>
+                        </div>
+                        <div class="grid-layout-two-columns__item">
+                            <p class="consideration__number | text--extra-bold">02</p>
+                            <h3 class="consideration__title | text--extra-bold">Booking & Event Systems</h3>
+                            <p class="consideration__text">Create seamless booking and event registration systems that are easy to use for customers and simple for the client to manage through Notion databases.</p>
+                        </div>
+                        <div class="grid-layout-two-columns__item">
+                            <p class="consideration__number | text--extra-bold">03</p>
+                            <h3 class="consideration__title | text--extra-bold">Multilingual Support</h3>
+                            <p class="consideration__text">Implement seamless bilingual functionality (English and Dutch) throughout the website, ensuring content is accessible and accurate in both languages.</p>
+                        </div>
+                        <div class="grid-layout-two-columns__item">
+                            <p class="consideration__number | text--extra-bold">04</p>
+                            <h3 class="consideration__title | text--extra-bold">Content Management</h3>
+                            <p class="consideration__text">Leverage Notion databases to create an easy-to-use content management system, allowing the client to update and maintain the website effortlessly.</p>
+                        </div>
+                        <div class="grid-layout-two-columns__item">
+                            <p class="consideration__number | text--extra-bold">05</p>
+                            <h3 class="consideration__title | text--extra-bold">Brand-aligned Visuals</h3>
+                            <p class="consideration__text">Develop a consistent visual style throughout the website that accurately reflects the company's values, atmosphere, and unique offering.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="design__section case-study__segment" id="design">
+            <h2 class="case-study__section__title">Design</h2>
+            <div class="prototype__container">
+                <div class="prototype__column">
+                    <img src="Media/Prototype/lokaal47PrototypeMain.jpeg" loading="lazy" class="prototype__image prototype__image--1" alt="Main page. Header video with 'Lokaal 47 - A hub designed to connect.' Sections: 'Discover Lokaal 47' with photo and floor plan, Facilities, Carousel with highlights, Testimonials, Partners. Footer.">
+                    <img src="Media/Prototype/lokaal47PrototypeAbout.jpeg" loading="lazy" class="prototype__image prototype__image--5" alt="About page. Section with title 'Meet Lokaal 47' and description. 'Partners' section lists partners with descriptions and contact info. Footer.">
+                    <img src="Media/Prototype/lokaal47PrototypeContact.jpeg" loading="lazy" class="prototype__image prototype__image--6" alt="Contact. 'Questions? Curiosities?' section includes phone, email, business hours, address, and contact form. Footer.">
+                </div>
+                <div class="prototype__column">
+                    <img src="Media/Prototype/lokaal47PrototypeImpact.jpeg" loading="lazy" class="prototype__image prototype__image--2" alt="Impact page. Sections include Mission, Supporting Local Businesses and Communities, Commitment to Sustainability, and Charitable Contributions. Footer.">
+                    <img src="Media/Prototype/lokaal47PrototypeAgenda.jpeg" loading="lazy" class="prototype__image prototype__image--3" alt="Agenda page. The page lists events with dates, times, and brief descriptions. Footer.">
+                    <img src="Media/Prototype/lokaal47PrototypeEvent.jpeg" loading="lazy" class="prototype__image prototype__image--4" alt="Event page. The page details a Sheep Petting Supreme event, including the date, time, admission benefits, and itinerary. Footer.">
+                    <img src="Media/Prototype/lokaal47PrototypeFAQ.jpeg" loading="lazy" class="prototype__image prototype__image--7" alt="FAQ page. The page includes a contact email, and an expandable list format for frequently asked questions detailed answers. Footer.">
+                    <img src="Media/Prototype/lokaal47PrototypeBooking.jpeg" loading="lazy" class="prototype__image prototype__image--8" alt="Booking page. Includes sections for selecting date, time, and number of guests. Tabs for additional services, a summary of costs, personal information and billing address fields, impact donation options. Parking information is also provided. Footer">
+                </div>
+            </div>
+        </section>
+        <div class="case-study__segment" id="development">
+            <section class="technical-stack__section | main-grid__container">
+                <h2 class="case-study__section__title">Technical Stack</h2>
+                <div class="case-study__section__info">
+                    <p class="technical-stack__intro assessment-and-considerations__intro">I utilized a diverse range of technologies to build and deploy this project. Key components included:</p>
+                    <ul class="technical-stack__list | disc-list case-study__section__margin-bottom--small">
+                        <li class="technical-stack__list__item"><span class="technical-stack__list__item__title | text--extra-bold">Frontend Generation: </span>11ty (Eleventy) generated the static website, dynamically inserting content from Notion databases into predefined variables and templates.</li>
+                        <li class="technical-stack__list__item"><span class="technical-stack__list__item__title | text--extra-bold">Content Management: </span>Notion served as the primary database and content management system, storing multilingual content, booking and event details, and other dynamic data.</li>
+                        <li class="technical-stack__list__item"><span class="technical-stack__list__item__title | text--extra-bold">Backend (Node.js): </span>Played a crucial role in maintaining security and functionality:
+                            <ol  class="technical-stack__sublist">
+                                <li class="technical-stack__list__sub-item">Handled Notion API calls, protecting API keys from client-side exposure.</li>
+                                <li class="technical-stack__list__sub-item">Triggered website rebuilds when content was updated in Notion.</li>
+                                <li class="technical-stack__list__sub-item">Managed email functionality, keeping sensitive information server-side.</li>
+                            </ol>
+                        </li>
+                        <li class="technical-stack__list__item"><span class="technical-stack__list__item__title | text--extra-bold">API Integration: </span>Custom integration with the Notion API facilitated secure data flow between the backend and Notion database.</li>
+                        <li class="technical-stack__list__item"><span class="technical-stack__list__item__title | text--extra-bold">Build Automation: </span>Implemented to regenerate the static site upon content updates in Notion, ensuring the website always reflected the latest information.</li>
+                        <li class="technical-stack__list__item"><span class="technical-stack__list__item__title | text--extra-bold">Containerization: </span>Docker was used to encapsulate the application and its dependencies, ensuring consistency across development and production environments.</li>
+                        <li class="technical-stack__list__item"><span class="technical-stack__list__item__title | text--extra-bold">Utilities: </span>UUID library generated unique identifiers for bookings and events, enhancing data management and tracking capabilities.</li>
+                    </ul>
+                    <p>This architecture ensured a secure, efficient, and portable system where content updates in Notion seamlessly propagated to the live website, while maintaining consistency across different environments and providing robust data management capabilities.</p>
+                </div>
+            </section>
+            <section class="notion-integration__section | main-grid__container">
+                <h2 class="case-study__section__title">Notion Integration</h2>
+                <div class="case-study__section__info">
+                    <p class="notion-integration__intro assessment-and-considerations__intro">A key feature of this project was the extensive use of Notion databases, which provided a flexible and user-friendly content management system:</p>
+                    <div class="notion-integration__items | grid-layout-two-columns">
+                        <div class="grid-layout-two-columns__item">
+                            <p class="notion-integration__number | text--extra-bold">01</p>
+                            <h3 class="notion-integration__title | text--extra-bold">Multilingual Content Management</h3>
+                            <p class="notion-integration__text">Created a Notion database for English and Dutch versions of each text element. Utilized 11ty to dynamically insert the correct language version based on user selection, ensuring seamless bilingual functionality.</p>
+                        </div>
+                        <div class="grid-layout-two-columns__item">
+                            <p class="notion-integration__number | text--extra-bold">02</p>
+                            <h3 class="notion-integration__title | text--extra-bold">Dynamic Booking System</h3>
+                            <p class="notion-integration__text">Implemented a Notion database for managing bookable services. The client can easily add, remove, or modify booking options without code changes. When bookings are made, a separate Notion database is automatically updated, allowing real-time reservation tracking.</p>
+                        </div>
+                        <div class="grid-layout-two-columns__item">
+                            <p class="notion-integration__number | text--extra-bold">03</p>
+                            <h3 class="notion-integration__title | text--extra-bold">Automated Event Management</h3>
+                            <p class="notion-integration__text">Designed a Notion database for managing public events. 11ty generates event pages and registration forms automatically. When users register, their information is instantly added to the Notion database, providing real-time attendee tracking for the client.</p>
+                        </div>
+                        <div class="grid-layout-two-columns__item">
+                            <p class="notion-integration__number | text--extra-bold">04</p>
+                            <h3 class="design-consideration__title | text--extra-bold">Content Tracking and Collaboration</h3>
+                            <p class="notion-integration__text">Used a Notion database to track needed website content and its status. This enabled seamless collaboration with the client on content creation and approval, ensuring all necessary information was included and up-to-date.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="case-study__segment" id="conclusion">
+            <section class="learning-on-the-job__section | main-grid__container">
+                <h2 class="case-study__section__title">Learning on the Job</h2>
+                <div class="case-study__section__info">
+                    <p class="learning-on-the-job__intro assessment-and-considerations__intro">As a designer expanding into development, this project presented an opportunity for significant growth:</p>
+                    <ul class="learning-on-the-job__list | disc-list">
+                        <li class="learning-on-the-job__list__item">Started with basic HTML/CSS/JS knowledge and progressively learned more advanced concepts.</li>
+                        <li class="learning-on-the-job__list__item">Learned 11ty for templating and static site generation.</li>
+                        <li class="learning-on-the-job__list__item">Gained hands-on experience with API integration and database management.</li>
+                        <li class="learning-on-the-job__list__item">Developed problem-solving skills by tackling complex features like the booking system.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="conclusion__section | main-grid__container">
+                <h2 class="case-study__section__title">Conclusion</h2>
+                <div class="case-study__section__info">
+                    <p>This project allowed me to apply my design skills while significantly expanding my development capabilities. By creating a comprehensive solution that met the client's needs and provided an engaging user experience, I delivered a website that effectively communicates the company's offerings and values. The project demonstrated my ability to learn and implement new technologies to solve real-world business challenges.</p>
+                    <p>Key learnings include the importance of effective client communication, the value of flexible content management systems, and the power of integrating various technologies to create a cohesive solution.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer__nav__projects">
+        <div class="footer__nav__previous-project footer__nav__project">
+            <a href="/case-closed-for-now/"><img src="../Media/arrowLeft.svg" class="footer__nav__arrow" alt="Navigate to unknown project"></a>
+            <div class="footer__nav__text">
+                <a href="/case-closed-for-now/" class="footer__nav__direction"><h2 class="case-study__section__title">This way</h2></a>
+                <a href="/case-closed-for-now/" class="footer__nav__project-name">???</a>
+            </div>
+        </div>
+        <div class="footer__nav__next-project footer__nav__project">
+            <div class="footer__nav__text">
+                <a href="/../../projects/coaches-for-ukraine/" class="footer__nav__direction"><h2 class="case-study__section__title">The other way</h2></a>
+                <a href="/../../projects/coaches-for-ukraine/" class="footer__nav__project-name">Coaches for Ukraine</a>
+            </div>
+            <a href="/../../projects/coaches-for-ukraine/"><img src="../Media/arrowRight.svg" class="footer__nav__arrow" alt="Navigate to Coaches for Ukraine project"></a>
+        </div>
+    </footer>
+    <script src="/Scripts/caseStudiesScripts.js"></script>
+</body>
+</html>

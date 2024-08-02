@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404: Page Not Found - You Know Now</title>
+    <meta name="description" content="Sorry, the page you're looking for doesn't exist. Explore Yunona Korzh's UI/UX design portfolio or contact for UI/UX design and web development services.">
+    <meta name="robots" content="noindex,follow">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="body--main-pages">
+    <nav class="navigation" aria-label="Main Navigation" id="navigation--main-page">
+        <div class="logo__wrapper">
+            <a href="/" class="logo">You Know Now</a>
+        </div>
+        <div class="menu-icon">
+            <p>MENU</p>
+        </div>
+        <div class="menu" id="menu">
+            <ul class="menu__links">
+                <li class="menu__item"><a href="/work/" class="menu__link">Work</a></li>
+                <li class="menu__item"><a href="/about/" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="/Media/resume - Yunona Korzh.pdf" class="menu__link" target="_blank" rel="noopener" aria-label="Resume (opens in a new tab)">Resume</a></li>
+                <li class="menu__item"><a href="/testimonials/" class="menu__link">Testimonials</a></li>
+                <li class="menu__item"><a href="/contact/" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="page-not-found__main">
+        <hgroup class="heading__wrapper">
+            <h1 class="main__heading">404</h1>
+            <p class="subheading">Oops! Page Not Found</p>
+        </hgroup>
+        <div class="page-not-found__main_content">
+            <section class="page-not-found__text">
+                    <p class="page-not-found__paragraph | margin-bottom--small">It looks like you've stumbled upon a page that's gone rogue. Don't worry, it's not your fault - sometimes even the most well-behaved URLs like to wander off and explore uncharted digital territory.</p>
+                    <!-- <p>But fear not, my intrepid explorer, for you've just discovered the perfect opportunity to flex your creative muscles! While we work on tracking down that mischievous page, why not take a moment to sketch out your own design for a 404 adventure? Who knows, you might just come up with the next big thing in error messaging!</p>
+                    <p>And when you're ready to get back on the trail, just point your compass back to the homepage, and we'll guide you to safety!</p> -->
+                    <p class="page-not-found__paragraph  | margin-bottom--small">But fear not! Why not try one of these instead?</p>
+                    <ul class="page-not-found__links | margin-bottom--small">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/work/">Work</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                    <p class="page-not-found__paragraph">Or, if you're feeling adventurous, <a href="mailto:yunonakorzh@gmail.com">let me know</a> what you were looking for. I might just build it!</p>
+            </section>
+            <section class="paint-window">
+                <div class="title-bar">Sketch</div>
+                <div class="controls">
+                    <div class="color-palette">
+                        <input type="color" id="colorPicker" value="#000000">
+                    </div>
+                    <div class="tools">
+                        <button id="pencilTool" class="active"><img src="/Media/Icons/pencil.svg" alt=""></button>
+                        <button id="eraserTool"><img src="/Media/Icons/eraser.svg" alt=""></button>
+                        <input type="range" id="brushSize" min="1" max="50" value="5">
+                    </div>
+                    <button id="clearCanvas">Clear All</button>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="drawingCanvas"></canvas>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="/Scripts/scripts.js"></script>
+</body>
+</html>

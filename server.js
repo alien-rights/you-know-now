@@ -12,7 +12,7 @@ const port = process.env.PORT || 8800;
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'wwwroot')));
 app.use(cors());
 
 // Rate limiting
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/Pages/contact.html');
+    res.sendFile(__dirname + '/contact/index.html');
 });
 
 // POST route to handle form submission
@@ -78,16 +78,17 @@ app.post('/contactForm', async (req, res) => {
 
 // 404 handler
 app.use((req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname, 'Pages', '404.html'));
+    res.status(404).sendFile(path.join(__dirname, 'wwwroot', '404.html'));
 });
 
 // Error handler
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    res.status(500).sendFile(path.join(__dirname, 'Pages', '404.html'));
+    res.status(500).sendFile(path.join(__dirname, 'wwwroot', '404.html'));
 });
 
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+
